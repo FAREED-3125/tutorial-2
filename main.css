@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Soft_blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very_dark_blue_mai_BG: hsl(217, 54%, 11%);
+    --Very_dark_blue_card_BG: hsl(216, 50%, 16%);
+    --Very_dark_blue_line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Very_dark_blue_mai_BG);
+    font-size: 18px;
+    line-height: 1.5rem;
+}
+
+.container {
+    width: 300px;
+    padding: 20px;
+    background-color: var(--Very_dark_blue_card_BG);
+    border-radius: 15px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+
+.container .upper-section img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.lower-section {
+    border-bottom: 1px solid var(--Very_dark_blue_line);
+}
+
+.lower-section h2 {
+    color: white;
+    font-size: 18px;
+    padding:10px 0px;
+    font-weight: 500;
+}
+
+.lower-section p {
+    color: var(--Soft_blue);
+    font-size: 15px;
+    
+}
+
+
+.lower-sub {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px;
+}
+
+.lower-sub .left-sub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lower-sub .left-sub svg {
+    margin-right: 7px;
+
+}
+
+.lower-sub .left-sub h2{
+    color: cyan;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.right-sub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.right-sub svg {
+    margin-right: 7px;
+}
+
+.right-sub p {
+    color: var(--Soft_blue);
+}
+
+.bottom-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 10px ;
+
+}
+
+.bottom-section img {
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+
+}
+
+.bottom-section .avatar {
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-section p {
+    color: var(--Soft_blue);
+    font-size: 15px;
+}
+
+.bottom-section p span {
+    color: white;
+}
+
+@media(max-width:375px)
+{
+    body
+    {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     
+
+    }
+}
